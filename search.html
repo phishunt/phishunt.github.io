@@ -162,7 +162,7 @@
 										<progress value="0" max="5" id="progressBar"></progress>
 									</div>
 									<div class="col-md-auto align-self-center">
-										<span style="font-size: 18px;">Table data source: <em style="font-size: 16px;">year.csv</em></span>
+										<span style="font-size: 18px;">Table data source: <em style="font-size: 16px;">week.csv</em></span>
 									</div>
 									<div class="col align-self-center" style="padding-right: 0;">
 										<button style="background-color: #4682B4;border-color: black;" onclick="exportTableToCSV('TweetFeed.csv')" type="button" class="btn btn-primary float-right align-middle"><i class="fas fa-download"></i> Export only filtered</button>
@@ -190,7 +190,7 @@
 											<th>Type</th>
 											<th>Value</th>
 											<th>Tags</th>
-											<th><i class="fab fa-twitter"></i></th>
+											<th><i style="color:#1DA1F2;" class="fab fa-twitter"></i></th>
 											<th><img id="virustotal" src="img/vt.png" alt="VirusTotal"></th>
 										</tr>
 									</thead>
@@ -353,7 +353,7 @@
 								// data[i][3] = '<a style="text-decoration: none;" target="_blank" href="https://www.virustotal.com/gui/search/' + value + '">' + value + '</a>'
 
 								var tweet_url = data[i][5];
-								data[i][5] = '<a style="text-decoration: none;" target="_blank" href="' + tweet_url + '"><i class="fab fa-twitter"></i> <i class="fas fa-external-link-alt"></i></a>'
+								data[i][5] = '<a style="text-decoration: none;color:#1DA1F2;" target="_blank" href="' + tweet_url + '"><i class="fab fa-twitter"></i> <i class="fas fa-external-link-alt"></i></a>'
 
 								// Add VT
 
@@ -419,7 +419,7 @@
 							// $(this.node()).find('td').eq(3).html('<a style="text-decoration: none;" target="_blank" href="https://www.virustotal.com/gui/search/' + value + '">' + value + '</a>');
 
 							var tweet_url = $(this.node()).find('td').eq(5).text().trim();
-							$(this.node()).find('td').eq(5).html('<a style="text-decoration: none;" target="_blank" href="' + tweet_url + '"><i class="fab fa-twitter"></i> <i class="fas fa-external-link-alt"></i></a> <a style="text-decoration: none;" target="_blank" href="https://www.virustotal.com/gui/search/' + value + '"></a>');
+							$(this.node()).find('td').eq(5).html('<a style="text-decoration: none;color:#1DA1F2;" target="_blank" href="' + tweet_url + '"><i class="fab fa-twitter"></i> <i class="fas fa-external-link-alt"></i></a> <a style="text-decoration: none;" target="_blank" href="https://www.virustotal.com/gui/search/' + value + '"></a>');
 
 						})
 						animationNew();
@@ -430,8 +430,6 @@
 				},
 				cache: false
 			});
-			//                                                        $.get('https://raw.githubusercontent.com/0xDanielLopez/TweetFeed/master/today.csv', function (response) {
-			//                                                        })
 			init = 0;
 			loaddatacall++;
 		}
