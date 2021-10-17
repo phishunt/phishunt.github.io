@@ -163,9 +163,9 @@
 								<colgroup>
 									<col span="1" style="width: 8%;">	<!-- Number -->
 									<col span="1" style="width: 10%;">	<!-- Image -->
-									<col span="1" style="width: 12%;">	<!-- User -->
+									<col span="1" style="width: 15%;">	<!-- User -->
 									<col span="1" style="width: 10%;">	<!-- IOCs -->
-									<col span="1" style="width: 60%;">	<!-- Top Tags -->
+									<col span="1" style="width: 57%;">	<!-- Top Tags -->
 								</colgroup>
 								<thead>
 									<tr>
@@ -474,7 +474,7 @@
 				var user = $(this.node()).find('td').eq(2).text().trim();
 				$(this.node()).find('td').eq(1).html('<a style="text-decoration: none;color: blue;" target="_blank" href="https://twitter.com/' + user + '"><img src="pics/' + user + '.png" style="border-radius: 50%" width="40" height="40"></a>');
 				//$(this.node()).find('td').eq(2).html('<a style="color: blue;" target="_blank" href="https://twitter.com/' + user + '">' + user + '</a>');
-				$(this.node()).find('td').eq(2).html('<a target="_blank" class="badge badge-info" style="color:white;font-size: 14px;background-color: #00acee;border: 1px solid black;" href="https://twitter.com/' + user + '"><i class="fab fa-twitter"></i> <span class="pb-2 align-middle">' + user + '</span></a>');
+				$(this.node()).find('td').eq(2).html('<a target="_blank" class="btn btn-primary" style="color:white;font-size: 13px;background-color: #00acee;border: 1px solid black;font-family: \'Rubik\', sans-serif;font-weight: 600;" href="https://twitter.com/' + user + '"><i class="fab fa-twitter"></i> <span class="pb-2 align-middle">' + user + '</span></a>');
 			})
 		}
 
