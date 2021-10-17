@@ -78,7 +78,7 @@
 		<div id="content-wrapper" class="d-flex flex-column">
 			<!-- Main Content -->
 			<!-- Top bar -->
-			<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="background: linear-gradient(#1DA1F2 0%, #1DA1F2 100%);">
+			<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block fixed-top" style="background: linear-gradient(#1DA1F2 0%, #1DA1F2 100%);">
 				<div class="container-fluid">
 					<ul class="nav navbar-nav navbar-left">
 						<li class="nav-item">
@@ -88,21 +88,21 @@
 							<a class="nav-link active" href="feeds.html"><i class="fas fa-rss"></i> Feeds</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="researchers.html"><i class="fas fa-users"></i> Researchers</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="search.html"><i class="fas fa-search"></i> Search in database</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="hunt.html"><i class="fas fa-shield-alt"></i> Hunt</a>
-						</li>
+						</li>						
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item">
-							<a class="nav-link" href="https://twitter.com/0xDanielLopez" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+							<a class="nav-link" href="https://twitter.com/i/lists/1423693426437001224" target="_blank"><i class="fab fa-twitter"></i> List <sup><i class="fas fa-external-link-alt"></i></sup></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/0xDanielLopez/TweetFeed" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+							<a class="nav-link" href="https://github.com/0xDanielLopez/TweetFeed" target="_blank"><i class="fab fa-github"></i> GitHub <sup><i class="fas fa-external-link-alt"></i></sup></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="about.html"><i class="fas fa-question-circle"></i> About</a>
@@ -136,7 +136,7 @@
 			<!-- Top bar end -->
 			<div id="content">
 				<div id="presentationSecondary">
-					<br><br>
+					<br><br><br>
 					<h1><i class="fas fa-rss" style="font-size: 36px;"></i> Feeds</h1>
 					<h2><em>Feeds from today, last week, last month and last year</em></h2>
 				</div>
@@ -250,7 +250,7 @@
 								</div>
 								<hr>
 							</div>
-						</div>
+						</div> <!-- Card -->
 					</div> <!-- class="col-sm-6" -->
 				</div> <!-- row -->
 				<div class="row">
@@ -582,10 +582,22 @@
 			</div>
 			<!-- End of Main Content -->
 			<!-- Footer -->
-			<footer class="sticky-footer bg-white">
-				<div class="container my-auto">
-					<div class="copyright text-center my-auto">
-						<span>Copyright &copy; Your Website 2020</span>
+			<footer class="sticky-footer bg-white" >
+				<div class="container-fluid py-1" style="color: black;">
+					<div class="row">
+						<div class="col-md-4 text-left"><span class="text-decoration-none">A project by Daniel López</span></div>
+						<div class="col-md-4 text-center"></div>
+						<div class="col-md-4 text-right">20211011</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 text-left"><a class="text-decoration-none" href="https://twitter.com/0xDanielLopez" target="_blank"><i class="fab fa-twitter"></i>&nbspTwitter</a></div>
+						<div class="col-md-4 text-center"></div>
+						<div class="col-md-4 text-right">© 2021 TweetFeed</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 text-left"><span class="text-decoration-none"><a class="text-decoration-none" href="https://www.linkedin.com/in/0xDanielLopez/" target="_blank"><i class="fab fa-linkedin"></i>&nbspLinkedIn</a></span></div>
+						<div class="col-md-4 text-center">Site hosted at <a class="text-decoration-none" href="/tos/"><i class="fab fa-github"></i> GitHub</a></div>
+						<div class="col-md-4 text-right">Made with ❤ in Andalucía, Spain&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
 					</div>
 				</div>
 			</footer>
@@ -875,8 +887,8 @@
 				"URL": "#0026E6", 
 				"Domain": "#3399FF",
 				"IP": "#02bf0f",
-				"SHA256": "#cf0000",
-				"MD5": "#FFC34D"
+				"SHA256": "#FFC34D",
+				"MD5": "#ffc591"
 			};
 
 			var darker = -0.6;
