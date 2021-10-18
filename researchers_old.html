@@ -66,14 +66,6 @@
                 -o-animation:      fadein 2s; /* Opera 12+ */
                 animation:         fadein 2s; /* IE 10+ */
             }
-            .fade {
-				opacity: 1;
-				-webkit-transition: opacity 300ms linear !important;
-				-moz-transition: opacity 300ms linear !important;
-				-ms-transition: opacity 300ms linear !important;
-				-o-transition: opacity 300ms linear !important;
-				transition: opacity 300ms linear !important;
-			}
         </style>
 </head>
 
@@ -95,9 +87,6 @@
 						<li class="nav-item">
 							<a class="nav-link" href="feeds.html"><i class="fas fa-rss"></i> Feeds</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="graphs.html"><i class="fas fa-chart-pie"></i> Graphs</a>
-						</li>
 						<li class="nav-item active">
 							<a class="nav-link active" href="researchers.html"><i class="fas fa-users"></i> Researchers</a>
 						</li>
@@ -106,7 +95,7 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="hunt.html"><i class="fas fa-shield-alt"></i> Hunt</a>
-						</li>
+						</li>						
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item">
@@ -152,186 +141,165 @@
 					<h2><em>Infosec people that post IOCs on Twitter</em></h2>
 				</div>
 				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
-				<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="pills-today-tab" data-toggle="pill" href="#pills-today" role="tab" aria-controls="pills-today" aria-selected="true">Today</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-week-tab" data-toggle="pill" href="#pills-week" role="tab" aria-controls="pills-week" aria-selected="false">Week</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-month-tab" data-toggle="pill" href="#pills-month" role="tab" aria-controls="pills-month" aria-selected="false">Month</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="pills-year-tab" data-toggle="pill" href="#pills-year" role="tab" aria-controls="pills-year" aria-selected="false">Year</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="pills-today" role="tabpanel" aria-labelledby="pills-today-tab">
-						<div class="card shadow mb-4">
-							<div class="card-header py-3">
-								<!-- Table presentation (custom) -->
-								<div class="container-fluid rounded">
-									<div class="row">
-										<div class="col align-self-center">
-										</div>
-										<div class="col-md-auto align-self-center">
-											<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">today.csv</em></span>
-										</div>
-										<div class="col align-self-center" style="padding-right: 0;">
-										</div>
-									</div>
+				<div class="card shadow mb-4">
+					<div class="card-header py-3">
+						<!-- Table presentation (custom) -->
+						<div class="container-fluid rounded">
+							<div class="row">
+								<div class="col align-self-center">
 								</div>
-								<!-- End Table presentation (custom) -->
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table display compact" id="dataTableUsersToday" width="100%" cellspacing="0">
-										<colgroup>
-											<col span="1" style="width: 8%;"> <!-- Number -->
-											<col span="1" style="width: 10%;"> <!-- Image -->
-											<col span="1" style="width: 15%;"> <!-- User -->
-											<col span="1" style="width: 10%;"> <!-- IOCs -->
-											<col span="1" style="width: 57%;"> <!-- Top Tags -->
-										</colgroup>
-										<thead>
-											<tr>
-												<th>Number</th>
-												<th>Image</th>
-												<th>User</th>
-												<th>IOCs</th>
-												<th>Top Tags</th>
-											</tr>
-										</thead>
-									</table>
-								</div> <!-- table-responsive -->
-							</div> <!-- Card body -->
-						</div><!-- Card -->
-					</div>
-					<div class="tab-pane fade" id="pills-week" role="tabpanel" aria-labelledby="pills-ip-tab">
-						<div class="card shadow mb-4">
-							<div class="card-header py-3">
-								<!-- Table presentation (custom) -->
-								<div class="container-fluid rounded">
-									<div class="row">
-										<div class="col align-self-center">
-										</div>
-										<div class="col-md-auto align-self-center">
-											<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">week.csv</em></span>
-										</div>
-										<div class="col align-self-center" style="padding-right: 0;">
-										</div>
-									</div>
+								<div class="col-md-auto align-self-center">
+									<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">today.csv</em></span>
 								</div>
-								<!-- End Table presentation (custom) -->
-							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table display compact" id="dataTableUsersWeek" width="100%" cellspacing="0">
-										<colgroup>
-											<col span="1" style="width: 8%;"> <!-- Number -->
-											<col span="1" style="width: 10%;"> <!-- Image -->
-											<col span="1" style="width: 15%;"> <!-- User -->
-											<col span="1" style="width: 10%;"> <!-- IOCs -->
-											<col span="1" style="width: 57%;"> <!-- Top Tags -->
-										</colgroup>
-										<thead>
-											<tr>
-												<th>Number</th>
-												<th>Image</th>
-												<th>User</th>
-												<th>IOCs</th>
-												<th>Top tag</th>
-											</tr>
-										</thead>
-									</table>
-								</div> <!-- table-responsive -->
-							</div> <!-- Card body -->
-						</div><!-- Card -->
-					</div>
-					<div class="tab-pane fade" id="pills-month" role="tabpanel" aria-labelledby="pills-sha256-tab">
-						<div class="card shadow mb-4">
-							<div class="card-header py-3">
-								<!-- Table presentation (custom) -->
-								<div class="container-fluid rounded">
-									<div class="row">
-										<div class="col align-self-center">
-										</div>
-										<div class="col-md-auto align-self-center">
-											<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">month.csv</em></span>
-										</div>
-										<div class="col align-self-center" style="padding-right: 0;">
-										</div>
-									</div>
+								<div class="col align-self-center" style="padding-right: 0;">
 								</div>
-								<!-- End Table presentation (custom) -->
 							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table display compact" id="dataTableUsersMonth" width="100%" cellspacing="0">
-										<colgroup>
-											<col span="1" style="width: 8%;"> <!-- Number -->
-											<col span="1" style="width: 10%;"> <!-- Image -->
-											<col span="1" style="width: 15%;"> <!-- User -->
-											<col span="1" style="width: 10%;"> <!-- IOCs -->
-											<col span="1" style="width: 57%;"> <!-- Top Tags -->
-										</colgroup>
-										<thead>
-											<tr>
-												<th>Number</th>
-												<th>Image</th>
-												<th>User</th>
-												<th>IOCs</th>
-												<th>Top tag</th>
-											</tr>
-										</thead>
-									</table>
-								</div> <!-- table-responsive -->
-							</div> <!-- Card body -->
-						</div><!-- Card -->
+						</div>
+						<!-- End Table presentation (custom) -->
 					</div>
-					<div class="tab-pane fade" id="pills-year" role="tabpanel" aria-labelledby="pills-md5-tab">
-						<div class="card shadow mb-4">
-							<div class="card-header py-3">
-								<!-- Table presentation (custom) -->
-								<div class="container-fluid rounded">
-									<div class="row">
-										<div class="col align-self-center">
-										</div>
-										<div class="col-md-auto align-self-center">
-											<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">year.csv</em></span>
-										</div>
-										<div class="col align-self-center" style="padding-right: 0;">
-										</div>
-									</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table display compact" id="dataTableUsersToday" width="100%" cellspacing="0">
+								<colgroup>
+									<col span="1" style="width: 8%;">	<!-- Number -->
+									<col span="1" style="width: 10%;">	<!-- Image -->
+									<col span="1" style="width: 15%;">	<!-- User -->
+									<col span="1" style="width: 10%;">	<!-- IOCs -->
+									<col span="1" style="width: 57%;">	<!-- Top Tags -->
+								</colgroup>
+								<thead>
+									<tr>
+										<th>Number</th>
+										<th>Image</th>
+										<th>User</th>
+										<th>IOCs</th>
+										<th>Top Tags</th>
+									</tr>
+								</thead>
+							</table>
+						</div> <!-- table-responsive -->
+					</div> <!-- Card body -->
+				</div><!-- Card -->
+				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
+				<div class="card shadow mb-4">
+					<div class="card-header py-3">
+						<!-- Table presentation (custom) -->
+						<div class="container-fluid rounded">
+							<div class="row">
+								<div class="col align-self-center">
 								</div>
-								<!-- End Table presentation (custom) -->
+								<div class="col-md-auto align-self-center">
+									<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">week.csv</em></span>
+								</div>
+								<div class="col align-self-center" style="padding-right: 0;">
+								</div>
 							</div>
-							<div class="card-body">
-								<div class="table-responsive">
-									<table class="table display compact" id="dataTableUsersYear" width="100%" cellspacing="0">
-										<colgroup>
-											<col span="1" style="width: 8%;"> <!-- Number -->
-											<col span="1" style="width: 10%;"> <!-- Image -->
-											<col span="1" style="width: 15%;"> <!-- User -->
-											<col span="1" style="width: 10%;"> <!-- IOCs -->
-											<col span="1" style="width: 57%;"> <!-- Top Tags -->
-										</colgroup>
-										<thead>
-											<tr>
-												<th>Number</th>
-												<th>Image</th>
-												<th>User</th>
-												<th>IOCs</th>
-												<th>Top tag</th>
-											</tr>
-										</thead>
-									</table>
-								</div> <!-- table-responsive -->
-							</div> <!-- Card body -->
-						</div><!-- Card -->
+						</div>
+						<!-- End Table presentation (custom) -->
 					</div>
-				</div> <!-- End nav -->
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table display compact" id="dataTableUsersWeek" width="100%" cellspacing="0">
+								<colgroup>
+									<col span="1" style="width: 8%;">	<!-- Number -->
+									<col span="1" style="width: 10%;">	<!-- Image -->
+									<col span="1" style="width: 12%;">	<!-- User -->
+									<col span="1" style="width: 10%;">	<!-- IOCs -->
+									<col span="1" style="width: 60%;">	<!-- Top Tags -->
+								</colgroup>
+								<thead>
+									<tr>
+										<th>Number</th>
+										<th>Image</th>
+										<th>User</th>
+										<th>IOCs</th>
+										<th>Top tag</th>
+									</tr>
+								</thead>
+							</table>
+						</div> <!-- table-responsive -->
+					</div> <!-- Card body -->
+				</div><!-- Card -->
+				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
+				<div class="card shadow mb-4">
+					<div class="card-header py-3">
+						<!-- Table presentation (custom) -->
+						<div class="container-fluid rounded">
+							<div class="row">
+								<div class="col align-self-center">
+								</div>
+								<div class="col-md-auto align-self-center">
+									<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">month.csv</em></span>
+								</div>
+								<div class="col align-self-center" style="padding-right: 0;">
+								</div>
+							</div>
+						</div>
+						<!-- End Table presentation (custom) -->
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table display compact" id="dataTableUsersMonth" width="100%" cellspacing="0">
+								<colgroup>
+									<col span="1" style="width: 8%;">	<!-- Number -->
+									<col span="1" style="width: 10%;">	<!-- Image -->
+									<col span="1" style="width: 12%;">	<!-- User -->
+									<col span="1" style="width: 10%;">	<!-- IOCs -->
+									<col span="1" style="width: 60%;">	<!-- Top Tags -->
+								</colgroup>
+								<thead>
+									<tr>
+										<th>Number</th>
+										<th>Image</th>
+										<th>User</th>
+										<th>IOCs</th>
+										<th>Top tag</th>
+									</tr>
+								</thead>
+							</table>
+						</div> <!-- table-responsive -->
+					</div> <!-- Card body -->
+				</div><!-- Card -->
+				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
+				<div class="card shadow mb-4">
+					<div class="card-header py-3">
+						<!-- Table presentation (custom) -->
+						<div class="container-fluid rounded">
+							<div class="row">
+								<div class="col align-self-center">
+								</div>
+								<div class="col-md-auto align-self-center">
+									<span style="font-size: 18px;">Data source: <em style="font-size: 16px;">year.csv</em></span>
+								</div>
+								<div class="col align-self-center" style="padding-right: 0;">
+								</div>
+							</div>
+						</div>
+						<!-- End Table presentation (custom) -->
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table display compact" id="dataTableUsersYear" width="100%" cellspacing="0">
+								<colgroup>
+									<col span="1" style="width: 8%;">	<!-- Number -->
+									<col span="1" style="width: 10%;">	<!-- Image -->
+									<col span="1" style="width: 12%;">	<!-- User -->
+									<col span="1" style="width: 10%;">	<!-- IOCs -->
+									<col span="1" style="width: 60%;">	<!-- Top Tags -->
+								</colgroup>
+								<thead>
+									<tr>
+										<th>Number</th>
+										<th>Image</th>
+										<th>User</th>
+										<th>IOCs</th>
+										<th>Top tag</th>
+									</tr>
+								</thead>
+							</table>
+						</div> <!-- table-responsive -->
+					</div> <!-- Card body -->
+				</div><!-- Card -->
 				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
 			</div>
 			<!-- End of Main Content -->

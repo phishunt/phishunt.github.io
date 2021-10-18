@@ -21,13 +21,10 @@
 	<!-- Custom CSS 0xDanielLopez -->
 	<link href="css/table.css" rel="stylesheet">
 	<link href="css/index.css" rel="stylesheet">
-	<link href="css/tooltip.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-	<!-- Microsoft -->
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 		.url{
                 background-color: #c8f6fd; 
@@ -78,37 +75,34 @@
 		<div id="content-wrapper" class="d-flex flex-column">
 			<!-- Main Content -->
 			<!-- Top bar -->
-			<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block fixed-top" style="background: linear-gradient(#1DA1F2 0%, #1DA1F2 100%);">
+			<nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="background: linear-gradient(#1DA1F2 0%, #1DA1F2 100%);">
 				<div class="container-fluid">
 					<ul class="nav navbar-nav navbar-left">
 						<li class="nav-item">
 							<a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="feeds.html"><i class="fas fa-rss"></i> Feeds</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="graphs.html"><i class="fas fa-chart-pie"></i> Graphs</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="researchers.html"><i class="fas fa-users"></i> Researchers</a>
+							<a class="nav-link active" href="feeds.html"><i class="fas fa-rss"></i> Feeds</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="search.html"><i class="fas fa-search"></i> Search in database</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="hunt.html"><i class="fas fa-shield-alt"></i> Hunt</a>
+							<a class="nav-link" href="/newregistration/"><i class="fas fa-search"></i> Search in tools</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item">
-							<a class="nav-link" href="https://twitter.com/i/lists/1423693426437001224" target="_blank"><i class="fab fa-twitter"></i> List <sup><i class="fas fa-external-link-alt"></i></sup></a>
+							<a class="nav-link" href="https://twitter.com/0xDanielLopez" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/0xDanielLopez/TweetFeed" target="_blank"><i class="fab fa-github"></i> GitHub <sup><i class="fas fa-external-link-alt"></i></sup></a>
+							<a class="nav-link" href="https://github.com/0xDanielLopez/TweetFeed" target="_blank"><i class="fab fa-github"></i> GitHub</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" href="about.html"><i class="fas fa-question-circle"></i> About</a>
+							<a class="nav-link" href="/contact/"><i class="fas fa-envelope"></i> Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/about/"><i class="fas fa-question-circle"></i> About</a>
 						</li>
 					</ul>
 				</div>
@@ -128,7 +122,7 @@
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink" style="background-color: #343A40;">
 								<a class="dropdown-item" href="/statistics/"><i class="fas fa-chart-area"></i> Statistics</a>
 								<a class="dropdown-item" href="/protect/"><i class="fas fa-shield-alt"></i> Protect</a>
-								<a class="dropdown-item" href="https://twitter.com/0xDanielLopez" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+								<a class="dropdown-item" href="https://twitter.com/phishunt_io" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
 								<a class="dropdown-item" href="/contact/"><i class="fas fa-envelope"></i> Contact</a>
 								<a class="dropdown-item" href="/about/"><i class="fas fa-question-circle"></i> About</a>
 							</div>
@@ -138,104 +132,251 @@
 			</nav>
 			<!-- Top bar end -->
 			<div id="content">
-				<div id="presentationSecondary">
-					<br><br><br>
-					<h1><i class="fas fa-question-circle" style="font-size: 36px;"></i> About</h1>
-					<h2><em>TweetFeed</em></h2>
-				</div>
 				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
-				<ul style="font-size: 16px;">
-					<li><a href="about.html#repo" style="color: #0000EE;font-weight: 600;">GitHub repository</a></li>
-					<li><a href="about.html#howItWorks" style="color: #0000EE;font-weight: 600;">How it works?</a></li>
-					<li>Similar sites</li>
-					<li>Special thanks</li>
-				</ul>
-				<hr style="border: 1px solid black;" id="repo"> <!-- DIVIDER -->
-				<h2 style="color: #737373;font-weight: 550;">GitHub repository</h2>
-				<p style="color: #737373;font-size: 16px;">This site is based on the data grabbed at <a style="color: #0000EE;" href="https://github.com/0xDanielLopez/TweetFeed" target="_blank">TweetFeed</a> GitHub repository.</p>
-				<hr style="border: 1px solid black;" id="howItWorks"> <!-- DIVIDER -->
-				<h2 style="color: #737373;font-weight: 550;">How it works?</h2>
-				<p style="color: #737373;font-size: 16px;">Search tweets that contain certain tags or that are posted by certain <em>infosec</em> people.</p>
-				<br>
 				<div class="row">
 					<div class="col">
-						<div class="card shadow mb-4">
-							<div class="card-header text-center" style="color: #737373;font-size: 20px;"><b>Tags being searched</b></div>
-							<div class="card-block">
-								<div class="card-body">
-									<pre><code style="font-size: 14px;">- #phishing
-- #scam
-- #malware
-- #ransomware
-- #banker
-- #AgentTesla
-- #Alienbot
-- #BazarLoader
-- #CobaltStrike
-- #Dridex
-- #FluBot
-- #Formbook
-- #GootLoader
-- #GuLoader
-- #Hancitor
-- #IceID
-- #Lazarus
-- #Lokibot
-- #ProxyShell
-- #Qakbot
-- #Raccoon
-- #RedLine
-- #Remcos
-- #SquirrelWaffle
-- #Trickbot
-- #Ursnif
-- #XLoader
-- #ZLoader</code></pre>
-								</div> <!-- card-body -->
-							</div> <!-- card-block -->
-						</div> <!-- card -->
-					</div> <!-- col -->
-					<div class="col">
-						<div class="card shadow mb-4">
-							<div class="card-header text-center" style="color: #737373;font-size: 20px;"><b>List of infosec people</b></div>
+						<div class="card">
+							<div class="card-header text-center">
+								<span style="font-size: 20px;"><a style="background-color: #4682B4;border-color: black;" class="btn btn-primary" href="https://raw.githubusercontent.com/0xDanielLopez/TweetFeed/master/today.csv" target="_blank" role="button"><i class="fas fa-download"></i> Today (.csv)</a></span>
+								<br>
+								<span class="card-text" style="font-size:12px;text-align: center;"><em id="lastDate">.</em></span>
+							</div>
 							<div class="card-block">
 								<div class="card-body text-center">
-									<a style="background-color: #00a1f1;border-color: black;font-size: 16px;" class="btn btn-primary btn-sm" href="https://twitter.com/i/lists/1423693426437001224" target="_blank" role="button"><i class="fab fa-twitter"></i> TweetFeed list <i class="fas fa-external-link-alt"></i></a>
+									<div class="container">
+										<div class="row">
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-link"></i> URLs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-globe"></i> Domains
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-map-marker-alt"></i> IPs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> SHA256
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> MD5
+											</div>
+										</div> <!-- row -->
+										<div class="row today">
+										</div> <!-- row 2 -->
+									</div> <!-- container -->
 								</div> <!-- card-body -->
 							</div> <!-- card-block -->
 						</div> <!-- card -->
-					</div> <!-- col -->
+						<!-- Area Chart -->
+						<div class="card shadow mb-4">
+							<div class="card-header py-3">
+								<h6 class="m-0 font-weight-bold text-primary">Area Chart</h6>
+							</div>
+							<div class="card-body">
+								<div class="chart-area">
+									<canvas id="myAreaChart"></canvas>
+								</div>
+								<hr>
+								Styling for the area chart can be found in the
+								<code>/js/demo/chart-area-demo.js</code> file.
+							</div>
+						</div>
+					</div> <!-- class="col-sm-6" -->
+				</div> <!-- row -->
+				<div class="row">
+					<div class="col">
+						<!-- Donut Chart -->
+						<div class="col-xl-4 col-lg-5">
+							<div class="card shadow mb-4">
+								<!-- Card Header - Dropdown -->
+								<div class="card-header py-3">
+									<h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+								</div>
+								<!-- Card Body -->
+								<div class="card-body">
+									<div class="chart-pie pt-4">
+										<canvas id="myPieChart"></canvas>
+									</div>
+									<div class="mt-4 text-center small">
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #c8f6fd;"></i> URL
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #a0dde6;"></i> Domain
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #34e3a4;"></i> IP
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #EAC56E;"></i> SHA256
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #ead18f;"></i> MD5
+										</span>
+									</div>
+									<hr>
+									Styling for the donut chart can be found in the
+									<code>/js/demo/chart-pie-demo.js</code> file.
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<!-- Donut Chart -->
+						<div class="col-xl-4 col-lg-5">
+							<div class="card shadow mb-4">
+								<!-- Card Header - Dropdown -->
+								<div class="card-header py-3">
+									<h6 class="m-0 font-weight-bold text-primary">Donut Chart</h6>
+								</div>
+								<!-- Card Body -->
+								<div class="card-body">
+									<div class="chart-pie pt-4">
+										<canvas id="myPieChart"></canvas>
+									</div>
+									<div class="mt-4 text-center small">
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #c8f6fd;"></i> URL
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #a0dde6;"></i> Domain
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #34e3a4;"></i> IP
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #EAC56E;"></i> SHA256
+										</span>
+										<span class="mr-2">
+											<i class="fas fa-circle" style="color: #ead18f;"></i> MD5
+										</span>
+									</div>
+									<hr>
+									Styling for the donut chart can be found in the
+									<code>/js/demo/chart-pie-demo.js</code> file.
+								</div>
+							</div>
+						</div>
+					</div>
 				</div> <!-- row -->
 				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
-				<h2 style="color: #737373;font-weight: 550;">Similar sites</h2>
-				<ul style="font-size: 16px;">
-					<li><a target="_blank" href="https://threatfox.abuse.ch/browse/" style="color: #0000EE;">ThreatFox</a> - from abuse.ch</li>
-					<li><a target="_blank" href="https://urlscan.io/products/phishingfeed/" style="color: #0000EE;">Phishing URL Feed</a> - from urlscan.io</li>
-					<li><a target="_blank" href="https://phishunt.io/feed.txt" style="color: #0000EE;">Phishing feed</a> - from phishunt.io</li>
-				</ul>
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header text-center">
+								<span style="font-size: 20px;"><a style="background-color: #4682B4;border-color: black;" class="btn btn-primary" href="https://raw.githubusercontent.com/0xDanielLopez/TweetFeed/master/today.csv" target="_blank" role="button"><i class="fas fa-download"></i> Today (.csv)</a></span>
+								<br>
+								<span class="card-text" style="font-size:12px;text-align: center;"><em id="lastDate">.</em></span>
+							</div>
+							<div class="card-block">
+								<div class="card-body text-center">
+									<div class="container">
+										<div class="row">
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-link"></i> URLs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-globe"></i> Domains
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-map-marker-alt"></i> IPs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> SHA256
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> MD5
+											</div>
+										</div> <!-- row -->
+										<div class="row today">
+										</div> <!-- row 2 -->
+									</div> <!-- container -->
+								</div> <!-- card-body -->
+							</div> <!-- card-block -->
+						</div> <!-- card -->
+					</div> <!-- class="col-sm-6" -->
+				</div> <!-- row -->
 				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
-				<h2 style="color: #737373;font-weight: 550;">Special thanks</h2>
-				<p style="color: #737373;font-size: 16px;">Search tweets that contain certain tags or that are posted by certain <em>infosec</em> people.</p>
-
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header text-center">
+								<span style="font-size: 20px;"><a style="background-color: #4682B4;border-color: black;" class="btn btn-primary" href="https://raw.githubusercontent.com/0xDanielLopez/TweetFeed/master/today.csv" target="_blank" role="button"><i class="fas fa-download"></i> Today (.csv)</a></span>
+								<br>
+								<span class="card-text" style="font-size:12px;text-align: center;"><em id="lastDate">.</em></span>
+							</div>
+							<div class="card-block">
+								<div class="card-body text-center">
+									<div class="container">
+										<div class="row">
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-link"></i> URLs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-globe"></i> Domains
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-map-marker-alt"></i> IPs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> SHA256
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> MD5
+											</div>
+										</div> <!-- row -->
+										<div class="row today">
+										</div> <!-- row 2 -->
+									</div> <!-- container -->
+								</div> <!-- card-body -->
+							</div> <!-- card-block -->
+						</div> <!-- card -->
+					</div> <!-- class="col-sm-6" -->
+				</div> <!-- row -->
+				<hr style="border: 1px solid black;"> <!-- DIVIDER -->
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<div class="card-header text-center">
+								<span style="font-size: 20px;"><a style="background-color: #4682B4;border-color: black;" class="btn btn-primary" href="https://raw.githubusercontent.com/0xDanielLopez/TweetFeed/master/today.csv" target="_blank" role="button"><i class="fas fa-download"></i> Today (.csv)</a></span>
+								<br>
+								<span class="card-text" style="font-size:12px;text-align: center;"><em id="lastDate">.</em></span>
+							</div>
+							<div class="card-block">
+								<div class="card-body text-center">
+									<div class="container">
+										<div class="row">
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-link"></i> URLs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-globe"></i> Domains
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-map-marker-alt"></i> IPs
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> SHA256
+											</div>
+											<div class="col" style="font-size: 16px;">
+												<i class="fas fa-file-alt"></i> MD5
+											</div>
+										</div> <!-- row -->
+										<div class="row today">
+										</div> <!-- row 2 -->
+									</div> <!-- container -->
+								</div> <!-- card-body -->
+							</div> <!-- card-block -->
+						</div> <!-- card -->
+					</div> <!-- class="col-sm-6" -->
+				</div> <!-- row -->
 			</div>
 			<!-- End of Main Content -->
 			<!-- Footer -->
 			<footer class="sticky-footer bg-white">
-				<div class="container-fluid py-1" style="color: black;">
-					<div class="row">
-						<div class="col-md-4 text-left"><span class="text-decoration-none">A project by Daniel López</span></div>
-						<div class="col-md-4 text-center"></div>
-						<div class="col-md-4 text-right">20211011</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-left"><a class="text-decoration-none" href="https://twitter.com/0xDanielLopez" target="_blank"><i class="fab fa-twitter"></i>&nbspTwitter</a></div>
-						<div class="col-md-4 text-center"></div>
-						<div class="col-md-4 text-right">© 2021 TweetFeed</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 text-left"><span class="text-decoration-none"><a class="text-decoration-none" href="https://www.linkedin.com/in/0xDanielLopez/" target="_blank"><i class="fab fa-linkedin"></i>&nbspLinkedIn</a></span></div>
-						<div class="col-md-4 text-center">Site hosted at <a class="text-decoration-none" href="/tos/"><i class="fab fa-github"></i> GitHub</a></div>
-						<div class="col-md-4 text-right">Made with ❤ in Andalucía, Spain&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+				<div class="container my-auto">
+					<div class="copyright text-center my-auto">
+						<span>Copyright &copy; Your Website 2020</span>
 					</div>
 				</div>
 			</footer>
@@ -244,7 +385,7 @@
 		<!-- End of Content Wrapper -->
 		<!-- End of Page Wrapper -->
 		<!-- Scroll to Top Button-->
-		<a class="scroll-to-top rounded" href="#page-top" style="background: #1DA1F2;">
+		<a class="scroll-to-top rounded" href="#page-top">
 			<i class="fas fa-angle-up"></i>
 		</a>
 		<!-- Logout Modal-->
@@ -472,19 +613,19 @@
 				    '</tr></tbody>';*/
 
 				var myvar = '<div class="col">' +
-					'<h5 style="text-align: center;font-size: 20px;"><b>' + type['url'] + '</b></h5>' +
+					'<b style="font-size: 20px;">' + type['url'] + '</b>' +
 					'</div>' +
 					'<div class="col">' +
-					'<h5 style="text-align: center;font-size: 20px;"><b>' + type['domain'] + '</b></h5>' +
+					'<b style="font-size: 20px;">' + type['domain'] + '</b>' +
 					'</div>' +
 					'<div class="col">' +
-					'<h5 style="text-align: center;font-size: 20px;"><b>' + type['ip'] + '</b></h5>' +
+					'<b style="font-size: 20px;">' + type['ip'] + '</b>' +
 					'</div>' +
 					'<div class="col">' +
-					'<h5 style="text-align: center;font-size: 20px;"><b>' + type['sha256'] + '</b></h5>' +
+					'<b style="font-size: 20px;">' + type['sha256'] + '</b>' +
 					'</div>' +
 					'<div class="col">' +
-					'<h5 style="text-align: center;font-size: 20px;"><b>' + type['md5'] + '</b></h5>' +
+					'<b style="font-size: 20px;">' + type['md5'] + '</b>' +
 					'</div>'
 				$(className).html(myvar);
 
@@ -556,6 +697,27 @@
 			$(".nav").find(".active").removeClass("active");
 			$(this).parent().addClass("active");
 		});
+		</script>
+		<script src="vendor/chart.js/Chart.min.js"></script>
+		<!-- Page level custom scripts -->
+		<script src="js/demo/chart-area-demo.js"></script>
+		<script src="js/demo/chart-pie-demo.js"></script>
+		<script>
+		function addData(chart, label, data) {
+			chart.data.labels.push(label);
+			chart.data.datasets.forEach((dataset) => {
+				dataset.data.push(data);
+			});
+			chart.update();
+		}
+
+		function removeData(chart) {
+			chart.data.labels.pop();
+			chart.data.datasets.forEach((dataset) => {
+				dataset.data.pop();
+			});
+			chart.update();
+		}
 		</script>
 </body>
 
