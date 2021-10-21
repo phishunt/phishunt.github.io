@@ -235,34 +235,6 @@
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
 										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Types table (Today)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTypesToday" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Type</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
-								</div>
-							</div>
-							<div class="col d-flex align-items-stretch">
-								<!-- Donut Chart -->
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
 											<h6 class="m-0 font-weight-bold text-primary text-center">Today types</h6>
 										</div>
 										<!-- Card Body -->
@@ -272,40 +244,11 @@
 											</div>
 											<div class="mt-4 text-center small todayPieChartTypeHtml"></div>
 										</div>
-									</div> <!-- card -->
-								</div>
-							</div>
-						</div> <!-- row -->
-						<br>
-						<div class="row">
-							<div class="col d-flex align-items-stretch">
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Tags table (Today)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTagsToday" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Tags</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 							<div class="col d-flex align-items-stretch">
+								<!-- Donut Chart -->
 								<div class="col-xl-12 col-lg-12">
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
@@ -313,19 +256,13 @@
 											<h6 class="m-0 font-weight-bold text-primary text-center">Today tags</h6>
 										</div>
 										<!-- Card Body -->
-										<div class="card-body align-items-center d-flex justify-content-center">
-											<div class="container">
-												<div class="row">
-													<div class="chart-pie pt-4">
-														<canvas id="todayPieChartTag"></canvas>
-													</div>
-												</div>
-												<div class="row">
-													<div class="mt-4 text-center small todayPieChartTagHtml"></div>
-												</div>
+										<div class="card-body">
+											<div class="chart-pie pt-4">
+												<canvas id="todayPieChartTag"></canvas>
 											</div>
+											<div class="mt-4 text-center small todayPieChartTagHtml"></div>
 										</div>
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 						</div> <!-- row -->
@@ -395,34 +332,6 @@
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
 										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Types table (Week)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTypesWeek" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Type</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
-								</div>
-							</div>
-							<div class="col d-flex align-items-stretch">
-								<!-- Donut Chart -->
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
 											<h6 class="m-0 font-weight-bold text-primary text-center">Weekly types</h6>
 										</div>
 										<!-- Card Body -->
@@ -432,40 +341,11 @@
 											</div>
 											<div class="mt-4 text-center small weekPieChartTypeHtml"></div>
 										</div>
-									</div><!-- card -->
-								</div>
-							</div>
-						</div> <!-- row -->
-						<br>
-						<div class="row">
-							<div class="col d-flex align-items-stretch">
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Tags table (Week)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTagsWeek" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Tags</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 							<div class="col d-flex align-items-stretch">
+								<!-- Donut Chart -->
 								<div class="col-xl-12 col-lg-12">
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
@@ -473,19 +353,13 @@
 											<h6 class="m-0 font-weight-bold text-primary text-center">Weekly tags</h6>
 										</div>
 										<!-- Card Body -->
-										<div class="card-body align-items-center d-flex justify-content-center">
-											<div class="container">
-												<div class="row">
-													<div class="chart-pie pt-4">
-														<canvas id="weekPieChartTag"></canvas>
-													</div>
-												</div>
-												<div class="row">
-													<div class="mt-4 text-center small weekPieChartTagHtml"></div>
-												</div>
+										<div class="card-body">
+											<div class="chart-pie pt-4">
+												<canvas id="weekPieChartTag"></canvas>
 											</div>
+											<div class="mt-4 text-center small weekPieChartTagHtml"></div>
 										</div>
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 						</div> <!-- row -->
@@ -555,34 +429,6 @@
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
 										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Types table (Month)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTypesMonth" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Type</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
-								</div>
-							</div>
-							<div class="col d-flex align-items-stretch">
-								<!-- Donut Chart -->
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
 											<h6 class="m-0 font-weight-bold text-primary text-center">Monthly types</h6>
 										</div>
 										<!-- Card Body -->
@@ -592,40 +438,11 @@
 											</div>
 											<div class="mt-4 text-center small monthPieChartTypeHtml"></div>
 										</div>
-									</div><!-- card -->
-								</div>
-							</div>
-						</div> <!-- row -->
-						<br>
-						<div class="row">
-							<div class="col d-flex align-items-stretch">
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Tags table (Month)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTagsMonth" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Tags</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 							<div class="col d-flex align-items-stretch">
+								<!-- Donut Chart -->
 								<div class="col-xl-12 col-lg-12">
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
@@ -633,19 +450,13 @@
 											<h6 class="m-0 font-weight-bold text-primary text-center">Monthly tags</h6>
 										</div>
 										<!-- Card Body -->
-										<div class="card-body align-items-center d-flex justify-content-center">
-											<div class="container">
-												<div class="row">
-													<div class="chart-pie pt-4">
-														<canvas id="monthPieChartTag"></canvas>
-													</div>
-												</div>
-												<div class="row">
-													<div class="mt-4 text-center small monthPieChartTagHtml"></div>
-												</div>
+										<div class="card-body">
+											<div class="chart-pie pt-4">
+												<canvas id="monthPieChartTag"></canvas>
 											</div>
+											<div class="mt-4 text-center small monthPieChartTagHtml"></div>
 										</div>
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 						</div> <!-- row -->
@@ -715,34 +526,6 @@
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
 										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Types table (Year)</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTypesYear" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Type</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
-								</div>
-							</div>
-							<div class="col d-flex align-items-stretch">
-								<!-- Donut Chart -->
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
 											<h6 class="m-0 font-weight-bold text-primary text-center">Yearly types</h6>
 										</div>
 										<!-- Card Body -->
@@ -752,60 +535,25 @@
 											</div>
 											<div class="mt-4 text-center small yearPieChartTypeHtml"></div>
 										</div>
-									</div><!-- card -->
+									</div>
 								</div>
 							</div>
-						</div> <!-- row -->
-						<br>
-						<div class="row">
 							<div class="col d-flex align-items-stretch">
+								<!-- Donut Chart -->
 								<div class="col-xl-12 col-lg-12">
 									<div class="card shadow mb-4 h-100">
 										<!-- Card Header - Dropdown -->
 										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Tags table (Year)</h6>
+											<h6 class="m-0 font-weight-bold text-primary text-center">Yearly tags</h6>
 										</div>
 										<!-- Card Body -->
 										<div class="card-body">
-											<div class="table-responsive">
-												<table class="table display compact" id="dataTableTagsYear" width="100%" cellspacing="0">
-													<colgroup>
-														<col span="1" style="width: 40%;"> <!-- Type -->
-														<col span="1" style="width: 60%;"> <!-- Hits -->
-													</colgroup>
-													<thead>
-														<tr>
-															<th>Tags</th>
-															<th>Hits</th>
-														</tr>
-													</thead>
-												</table>
-											</div> <!-- table-responsive -->
-										</div><!-- card-body -->
-									</div> <!-- card -->
-								</div>
-							</div>
-							<div class="col d-flex align-items-stretch">
-								<div class="col-xl-12 col-lg-12">
-									<div class="card shadow mb-4 h-100">
-										<!-- Card Header - Dropdown -->
-										<div class="card-header py-3">
-											<h6 class="m-0 font-weight-bold text-primary text-center">Year tags</h6>
-										</div>
-										<!-- Card Body -->
-										<div class="card-body align-items-center d-flex justify-content-center">
-											<div class="container">
-												<div class="row">
-													<div class="chart-pie pt-4">
-														<canvas id="yearPieChartTag"></canvas>
-													</div>
-												</div>
-												<div class="row">
-													<div class="mt-4 text-center small yearPieChartTagHtml"></div>
-												</div>
+											<div class="chart-pie pt-4">
+												<canvas id="yearPieChartTag"></canvas>
 											</div>
+											<div class="mt-4 text-center small yearPieChartTagHtml"></div>
 										</div>
-									</div> <!-- card -->
+									</div>
 								</div>
 							</div>
 						</div> <!-- row -->
@@ -855,15 +603,6 @@
 			<script type="text/javascript" src="js/date.js"></script>
 			<script src="vendor/chart.js/Chart.min.js"></script>
 			<script>
-			let tableTypesToday = $('#dataTableTypesToday').DataTable();
-			let tableTagsToday = $('#dataTableTagsToday').DataTable();
-			let tableTypesWeek = $('#dataTableTypesWeek').DataTable();
-			let tableTagsWeek = $('#dataTableTagsWeek').DataTable();
-			let tableTypesMonth = $('#dataTableTypesMonth').DataTable();
-			let tableTagsMonth = $('#dataTableTagsMonth').DataTable();
-			let tableTypesYear = $('#dataTableTypesYear').DataTable();
-			let tableTagsYear = $('#dataTableTagsYear').DataTable();
-
 			Chart.defaults.global.defaultFontFamily = 'Nunito', '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 			Chart.defaults.global.defaultFontColor = '#858796';
 			$(function() {
@@ -1039,37 +778,13 @@
 					if (key == "domain") {
 						keys.push(capitalize(key));
 						values.push(value);
-					} else if (key == "url" || key == "ip" || key == "sha256" || key == "md5") {
+					} else if (key == "url" || key == "ip" || key == "sha256" || key == "md5"){
 						keys.push(key.toUpperCase());
 						values.push(value);
 					}
 				}
 				drawPieChart(divAccess + 'PieChartType', keys, values);
 
-				var result = [];
-
-				//for (var i = 1; i <= 10; i++) {
-				for (var i = 1; i <= keys.length; i++) {
-					result.push([keys[i - 1], nFormatter(values[i - 1], 2)]);
-				}
-
-				if (divAccess == "today") {
-					tableTypesToday.rows.add(result).draw(); // order([1, 'desc']).
-					$("#dataTableTypesToday tbody tr:last-child").insertBefore("#dataTableTypesToday tbody tr:nth-child(1)");
-					$("#dataTableTypesToday tbody tr:nth-child(4)").insertAfter("#dataTableTypesToday tbody tr:nth-child(5)");
-				} else if (divAccess == "week") {
-					tableTypesWeek.rows.add(result).draw(); // order([1, 'desc']).
-					$("#dataTableTypesWeek tbody tr:last-child").insertBefore("#dataTableTypesWeek tbody tr:nth-child(1)");
-					$("#dataTableTypesWeek tbody tr:nth-child(4)").insertAfter("#dataTableTypesWeek tbody tr:nth-child(5)");
-				} else if (divAccess == "month") {
-					tableTypesMonth.rows.add(result).draw(); // order([1, 'desc']).
-					$("#dataTableTypesMonth tbody tr:last-child").insertBefore("#dataTableTypesMonth tbody tr:nth-child(1)");
-					$("#dataTableTypesMonth tbody tr:nth-child(4)").insertAfter("#dataTableTypesMonth tbody tr:nth-child(5)");
-				} else if (divAccess == "year") {
-					tableTypesYear.rows.add(result).draw(); // order([1, 'desc']).
-					$("#dataTableTypesYear tbody tr:last-child").insertBefore("#dataTableTypesYear tbody tr:nth-child(1)");
-					$("#dataTableTypesYear tbody tr:nth-child(4)").insertAfter("#dataTableTypesYear tbody tr:nth-child(5)");
-				}
 			}
 
 			function capitalize(s) {
@@ -1110,40 +825,7 @@
 					values.push(tuples[i][1]);
 				}
 
-				drawPieChart(divAccess + 'PieChartTag', keys, values);
-
-				var result = [];
-
-				//for (var i = 1; i <= 10; i++) {
-				for (var i = 1; i <= keys.length; i++) {
-					result.push([keys[i - 1], values[i - 1]]); //nFormatter(values[i - 1], 2)
-				}
-
-				if (divAccess == "today") {
-					tableTagsToday.rows.add(result).order([1, 'desc']).draw();
-					tableTagsToday.rows().every(function() {
-						var number = $(this.node()).find('td').eq(1).text().trim();
-						$(this.node()).find('td').eq(1).html(nFormatter(number, 2));
-					})
-				} else if (divAccess == "week") {
-					tableTagsWeek.rows.add(result).order([1, 'desc']).draw();
-					tableTagsWeek.rows().every(function() {
-						var number = $(this.node()).find('td').eq(1).text().trim();
-						$(this.node()).find('td').eq(1).html(nFormatter(number, 2));
-					})
-				} else if (divAccess == "month") {
-					tableTagsMonth.rows.add(result).order([1, 'desc']).draw();
-					tableTagsMonth.rows().every(function() {
-						var number = $(this.node()).find('td').eq(1).text().trim();
-						$(this.node()).find('td').eq(1).html(nFormatter(number, 2));
-					})
-				} else if (divAccess == "year") {
-					tableTagsYear.rows.add(result).order([1, 'desc']).draw();
-					tableTagsYear.rows().every(function() {
-						var number = $(this.node()).find('td').eq(1).text().trim();
-						$(this.node()).find('td').eq(1).html(nFormatter(number, 2));
-					})
-				}
+				drawPieChart(divAccess + 'PieChartTag', keys, values)
 			}
 
 
