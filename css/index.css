@@ -69,3 +69,31 @@
     border-radius: 50px;
     background: #8ec9ee;
 }
+
+/* Todos */
+.nav-pills li a {
+    color: black !important;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 50px;
+    font-weight: 500;
+    background: #cad2e8;
+}
+
+/* Hover */
+.nav-pills li a:hover:not(.active) {
+    color: black !important;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 50px;
+    background: #e1e6f2;
+}
+
+/* El activo */
+.nav-link.active:not([href$="html"]):not([href$="/"]):not(.border-bottom-0) {
+    color: white !important;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 50px;
+    background: #1DA1F2;
+}
